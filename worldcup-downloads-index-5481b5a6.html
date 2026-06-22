@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>重新发现 · 世界杯资料站</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", "PingFang SC", "Microsoft YaHei", sans-serif;
+            background: linear-gradient(145deg, #fce8b0 0%, #f8cd7c 45%, #f3b554 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem 1.5rem;
+            line-height: 1.6;
+            color: #2d2416;
+        }
+
+        .card {
+            max-width: 810px;
+            width: 100%;
+            background: #ffffff;
+            border-radius: 42px;
+            padding: 3rem 2.8rem;
+            box-shadow: 0 20px 40px -12px rgba(180, 100, 20, 0.28), 0 8px 24px rgba(0, 0, 0, 0.04);
+            transition: box-shadow 0.2s ease;
+        }
+
+        @media (max-width: 540px) {
+            .card {
+                padding: 2rem 1.5rem;
+                border-radius: 28px;
+            }
+        }
+
+        .opening {
+            font-size: 1.8rem;
+            font-weight: 500;
+            letter-spacing: -0.3px;
+            color: #7f4e1a;
+            margin-bottom: 1.2rem;
+            border-left: 5px solid #e5973a;
+            padding-left: 1rem;
+        }
+
+        .opening span {
+            background: #f7e4c0;
+            padding: 0.1rem 0.45rem;
+            border-radius: 12px;
+            font-weight: 600;
+        }
+
+        .intro {
+            margin: 1.5rem 0 2rem 0;
+            font-size: 1.05rem;
+            color: #3f321f;
+        }
+
+        .intro a,
+        .faq-item a {
+            color: #b4681a;
+            text-decoration: none;
+            font-weight: 600;
+            border-bottom: 2px solid transparent;
+            transition: border 0.15s, background 0.15s;
+            padding: 0 0.1rem;
+        }
+
+        .intro a:hover,
+        .faq-item a:hover {
+            border-bottom: 2px solid #b4681a;
+            background: #fcedd6;
+            border-radius: 4px;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.8rem 2rem;
+            margin: 2.5rem 0 2rem 0;
+        }
+
+        @media (max-width: 500px) {
+            .feature-grid {
+                grid-template-columns: 1fr;
+                gap: 1.2rem;
+            }
+        }
+
+        .feature-item {
+            background: #fcf3e3;
+            border-radius: 24px;
+            padding: 1.3rem 1.5rem;
+            transition: background 0.2s, transform 0.15s;
+        }
+
+        .feature-item:hover {
+            background: #f8e6ca;
+            transform: translateY(-2px);
+        }
+
+        .feature-item h3 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #6f4516;
+            margin-bottom: 0.4rem;
+            letter-spacing: -0.2px;
+        }
+
+        .feature-item p {
+            font-size: 0.95rem;
+            color: #534129;
+        }
+
+        .quote-block {
+            background: #fff7ec;
+            border-radius: 28px;
+            padding: 1.4rem 2rem;
+            margin: 2rem 0 1.8rem 0;
+            font-style: normal;
+            border: 1px solid #ecdcc2;
+        }
+
+        .quote-block p {
+            font-size: 1rem;
+        }
+
+        .faq-summary {
+            margin: 2rem 0 1.2rem 0;
+            border-top: 2px dashed #eaceb2;
+            padding-top: 1.8rem;
+        }
+
+        .faq-item {
+            margin: 0.8rem 0;
+            padding: 0.6rem 1rem 0.6rem 2rem;
+            background: #faf1e1;
+            border-radius: 40px;
+            position: relative;
+        }
+
+        .faq-item::before {
+            content: "❓";
+            position: absolute;
+            left: 0.7rem;
+            top: 0.75rem;
+            font-size: 0.9rem;
+        }
+
+        .faq-item strong {
+            color: #724818;
+        }
+
+        .gentle-footer {
+            margin-top: 2.8rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid #ebdac6;
+            font-size: 0.9rem;
+            color: #6a5338;
+            text-align: center;
+            letter-spacing: 0.02rem;
+        }
+
+        .gentle-footer small {
+            display: block;
+            margin-top: 0.5rem;
+            color: #9d835b;
+            font-size: 0.8rem;
+        }
+
+        .button-tag {
+            display: inline-block;
+            background: #f1d9b6;
+            color: #4f361a;
+            padding: 0.2rem 1rem;
+            border-radius: 40px;
+            font-weight: 500;
+            font-size: 0.85rem;
+            margin-right: 0.4rem;
+            white-space: nowrap;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="opening">
+            <span>再</span>访 · 如见故友。
+        </div>
+
+        <div class="intro">
+            如果你曾在这个页面停留，现在值得重新打开。我们持续整理与 <a href="https://worldcup-downloads-fifa.com">世界杯</a> 相关的赛事档案、视觉素材与历史数据。每一次访问，都可能发现上次未留意的细节——无论是经典比赛的统计数据，还是官方图库的新增分类。
+        </div>
+
+        <div class="feature-grid">
+            <div class="feature-item">
+                <h3>📁 资料持续归档</h3>
+                <p>从 2002 年至今，超过 300 场关键赛事的官方简报、阵容列表与赛后报告，按年份与阶段整理。</p>
+            </div>
+            <div class="feature-item">
+                <h3>🖼️ 视觉素材扩展</h3>
+                <p>新增壁纸、历史海报与赛事标识高分辨率版本，适合收藏与展示用途。</p>
+            </div>
+            <div class="feature-item">
+                <h3>📊 数据查阅优化</h3>
+                <p>比赛结果、射手榜与积分表以清晰表格呈现，移动端同样易于浏览。</p>
+            </div>
+            <div class="feature-item">
+                <h3>🔖 收藏与再访</h3>
+                <p>将页面加入书签，每次回归都能留意到内容更新与结构微调。</p>
+            </div>
+        </div>
+
+        <div class="quote-block">
+            <p>“一次访问是遇见，再次访问是理解。那些关于 <a href="https://worldcup-downloads-fifa.com">世界杯</a> 的档案，值得反复翻阅。”<br>
+            <span style="display:block; margin-top:0.5rem; font-size:0.9rem; color:#7a623d;">—— 来自一位长期浏览者的笔记</span></p>
+        </div>
+
+        <div class="faq-summary">
+            <div class="faq-item">
+                <strong>内容多久更新？</strong> 通常每两周整合一次新增素材，重大赛事周期会提高频率。更新日志放在页面底部区域。
+            </div>
+            <div class="faq-item">
+                <strong>是否需要注册？</strong> 所有资料均可直接浏览，无注册或付费要求。部分高清文件提供直接下载链接。
+            </div>
+            <div class="faq-item">
+                <strong>如何快速找到需要的资料？</strong> 站内按年份、赛事阶段和文件类型提供分类索引，建议使用浏览器页面查找功能定位关键词。
+            </div>
+            <div class="faq-item">
+                <strong>我可以用这些素材做什么？</strong> 非商业用途的个人收藏、学习研究、内容引用均可，具体请参考每份文件的附带说明。
+            </div>
+        </div>
+
+        <div class="gentle-footer">
+            <span class="button-tag">🔁 持续关注</span>
+            <span class="button-tag">📌 可收藏</span>
+            <span class="button-tag">📂 资料站</span>
+            <small>每次回访，都有新发现。<br>页面内容不定期修订 · 最近更新于本季度</small>
+        </div>
+    </div>
+</body>
+</html>
